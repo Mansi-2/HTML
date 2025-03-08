@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chat</title>
+</head>
+<body>
+    <h2>Ask Gemini AI</h2>
+    
+    <form method="POST">
+        <textarea name="prompt" placeholder="Enter your question..." required></textarea>
+        <br>
+        <button type="submit">Ask</button>
+    </form>
+    
+    {% if response %}
+        <h3>Response:</h3>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
